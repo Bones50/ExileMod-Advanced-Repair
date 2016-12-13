@@ -7,4 +7,8 @@ c. Repair entire Vehicle.</br>
 To Do List:</br>
 a.  Include need for wheels for repairing entire vehicle, and repair only as many wheels as what the player currently has in inventory.</br>
 
+Installation:
+
 Refer to Install instructions contained within the file.
+
+Credit to John for his original work that this is based on (http://www.exilemod.com/profile/38-john/)
