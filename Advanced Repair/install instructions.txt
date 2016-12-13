@@ -7,7 +7,36 @@ Install Instructions:
 Bones_fnc_salvageAndRepairMenuHelo = compileFinal preprocessFileLineNumbers "Custom\advancedRepair\Bones_fnc_salvageAndRepairMenuHelo.sqf";
 Bones_fnc_salvageAndRepairMenuCar = compileFinal preprocessFileLineNumbers "Custom\advancedRepair\Bones_fnc_salvageAndRepairMenuCar.sqf";
  
-4. Open the config.cpp file in your mission, find the "class CfgInteractionMenus" section, and replace the repair function for cars and helos respectively, with the following:
+4. Open the description.ext file and change:
+showHUD[] = 
+{
+    true,   // Scripted HUD (same as showHUD command)
+    true,   // Vehicle + soldier info
+    true,   // Vehicle radar 
+    true,   // Vehicle compass
+    true,   // Tank direction indicator
+    false,  // Commanding menu
+    false,  // Group Bar
+    true,   // HUD Weapon Cursors
+    false   // Squad Radar
+};
+
+TO
+
+showHUD[] = 
+{
+    true,   // Scripted HUD (same as showHUD command)
+    true,   // Vehicle + soldier info
+    true,   // Vehicle radar 
+    true,   // Vehicle compass
+    true,   // Tank direction indicator
+    true,  // Commanding menu
+    false,  // Group Bar
+    true,   // HUD Weapon Cursors
+    false   // Squad Radar
+};
+
+5. Open the config.cpp file in your mission, find the "class CfgInteractionMenus" section, and replace the repair function for cars and helos respectively, with the following:
 
 //Bones Custom Vehicle Repairs
 
@@ -27,4 +56,4 @@ class Repair: ExileAbstractAction
 	action = "_this call Bones_fnc_salvageAndRepairMenuHelo";
 };
 
-5. Re-PBO your mission file and re-upload to the server.
+6. Re-PBO your mission file and re-upload to the server.
