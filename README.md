@@ -1,6 +1,6 @@
 # ExileMod-Advanced-Repair
-Complex repair script for ExileMod that allows:</br>
-a. Repair and salvage of engine and wheels.</br>
+Complex repair script for ExileMod with a selection menu that allows:</br>
+a. Repair and salvage of engine and wheels for vehicles, and tail and main rotors for helo's.</br>
 b. Repair of vehicle body.</br>
 c. Repair entire Vehicle.</br>
 
@@ -11,4 +11,4 @@ Installation:
 
 Refer to Install instructions contained within the file.
 
-Credit to John for his original work that this is based on (http://www.exilemod.com/profile/38-john/)
+Credit to John for his original idea and work, that portions of this script are based on (http://www.exilemod.com/profile/38-john/)
