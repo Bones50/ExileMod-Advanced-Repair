@@ -56,4 +56,14 @@ class Repair: ExileAbstractAction
 	action = "_this call Bones_fnc_salvageAndRepairMenuHelo";
 };
 
-6. Re-PBO your mission file and re-upload to the server.
+6. FOR INFISTAR USERS ONLY:
+a. Look for infistar config line
+
+KCM = "true"; /* Just close ALL CommandingMenus */
+and change "true" to "false"
+
+OR
+
+b. Add "#USER:ASL_Show_Repair_Options_Menu_Array" to the "allowedCommandingMenus[]" option.
+
+7. Re-PBO your mission file (and Infistar file if modified) and re-upload to the server.
